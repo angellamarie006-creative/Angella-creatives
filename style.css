@@ -1,3 +1,4 @@
+/* Shared color and font values for the whole site. */
 :root {
   --paper: #f2e8d9;
   --ink: #5b1a2b;
@@ -8,9 +9,11 @@
   --font-body: "DM Sans", system-ui, sans-serif;
 }
 
+/* Keep element sizing predictable and make page jumps scroll smoothly. */
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
 
+/* Set the page-wide background, text color, font, and reading spacing. */
 body {
   margin: 0;
   background: var(--paper);
@@ -20,6 +23,7 @@ body {
   line-height: 1.6;
 }
 
+/* Give headings, paragraphs, links, and keyboard focus shared defaults. */
 h1, h2, h3 { font-family: var(--font-display); line-height: 1.1; margin: 0; }
 p { max-width: 60ch; margin: 0 0 1rem; }
 a { color: inherit; }
