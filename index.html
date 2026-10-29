@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- These settings describe the page and help it work on different screens. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Angella Creatives | Graphic Design and Digital Products</title>
+  <meta name="description" content="Graphic design services and digital products (planners, e-books and cards) from Kampala, Uganda.">
+  
+  <!-- These links load the page's fonts and its separate CSS design file. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="#top">Angella Creatives</a>
+    <!-- aria-label provides a text alternative for the button, improving accessibility -->
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav" aria-label="Toggle navigation">Menu</button>
+    
+    <!-- class is a label for an element and CSS uses it  to apply styles. "nav" groups the navigation links -->
+    <nav id="nav" class="nav">
+      <a href="#work">Design work</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact" data-open-contact>Contact</a>
+    </nav>
+  </header>
+<!-- mainmarks the main content  of the page -->
+  <main id="top">
+
+  <!-- The hero is the main introduction visitors see first. -->
+    <section class="hero">
+      <h1>Design for your brand. </h1>
+       <h1> Products for your day.</h1>
+      <p>Hire me for logos,branding, posters and social media graphics or shop my planners, e-books and cards.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#work">See my design work</a>
+        <a class="btn" href="#shop">Shop digital products</a>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <h2>Design work</h2>
+      <!-- These buttons let visitors choose which project category to view. -->
+       <!-- role aqnd aria-label help assistive technologies -->
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="filter is-active" data-filter="all">All</button>
+        <button class="filter" data-filter="branding">Branding</button>
+        <button class="filter" data-filter="posters">Posters</button>
+        <button class="filter" data-filter="social">Social media</button>
+      </div>
+
+      <!-- Replace each .tile-art div with: <img src="images/your-file.jpg" alt="Describe the design"> -->
+      <!-- Each button is a project tile with saved category and text details. -->
+      <div class="grid">
+        <button class="tile" data-category="branding" data-title="Project name one" data-desc="A short note about the brief, your idea and the result.">
+          <div class="tile-art" style="--c:#f2b01e"></div>
+          <span class="tile-title">Project name one</span>
+        </button>
+        <button class="tile" data-category="posters" data-title="Project name two" data-desc="A short note about the brief, your idea and the result.">
+          <div class="tile-art" style="--c:#d6336c"></div>
+          <span class="tile-title">Project name two</span>
+        </button>
+        <button class="tile" data-category="social" data-title="Project name three" data-desc="A short note about the brief, your idea and the result.">
+          <div class="tile-art" style="--c:#3b5bdb"></div>
+          <span class="tile-title">Project name three</span>
+        </button>
+        <button class="tile" data-category="branding" data-title="Project name four" data-desc="A short note about the brief, your idea and the result.">
+          <div class="tile-art" style="--c:#12b886"></div>
+          <span class="tile-title">Project name four</span>
+        </button>
+        <button class="tile" data-category="posters" data-title="Project name five" data-desc="A short note about the brief, your idea and the result.">
+          <div class="tile-art" style="--c:#7048e8"></div>
+          <span class="tile-title">Project name five</span>
+        </button>
+        <button class="tile" data-category="social" data-title="Project name six" data-desc="A short note about the brief, your idea and the result.">
+          <div class="tile-art" style="--c:#fd7e14"></div>
+          <span class="tile-title">Project name six</span>
+        </button>
+      </div>
+    </section>
+
+  <!-- The shop section introduces the digital products. -->
+    <section id="shop" class="section">
+      <h2>Digital products</h2>
+      <p>Planners, e-books and cards are on the way. Each one is a digital download you can use right away.</p>
+
+      <!-- When a product is ready: replace the badge with
+           <a class="btn btn-primary" href="YOUR-SELLING-PAGE-LINK">Buy now</a>
+           and replace the .tile-art div with your cover image. Copy a whole <article> to add more. -->
+      <!-- Each article groups the image, name, description, and status of one product. -->
+      <div class="products">
+        <!-- EACH ARTICLE GROUPS A PRODUCT'S DETAILS -->
+        <article class="product">
+          <div class="tile-art" style="--c:#12b886"></div>
+          <h3>Planners</h3>
+          <p>Printable and digital planners to organize your days, goals and money.</p>
+          <span class="badge">Coming soon</span>
+        </article>
+        <article class="product">
+          <div class="tile-art" style="--c:#3b5bdb"></div>
+          <h3>E-books</h3>
+          <p>Short, practical guides you can read on your phone or tablet.</p>
+          <span class="badge">Coming soon</span>
+        </article>
+        <article class="product">
+          <div class="tile-art" style="--c:#d6336c"></div>
+          <h3>Cards</h3>
+          <p>Designed cards for birthdays, weddings and thank-yous, ready to print or send.</p>
+          <span class="badge">Coming soon</span>
+        </article>
+      </div>
+
+  <!-- This mailto link opens the visitor's email app with a ready-made subject. -->
+      <p class="shop-note">Want to know when they launch? 
+        <a href="mailto:angellamarie006@gmail.com?subject=Notify%20me%20about%20new%20products">Send me an email</a> and I'll let you know.</p>
+    </section>
+
+  <!-- The about section shares the designer's background and tools. -->
+    <section id="about" class="section about">
+      <h2>About me</h2>
+      <div>
+        <p>I'm Angella Marie, a freelance graphic designer based in Kampala. I hold a certificate in graphic design from Women In Technology Uganda and have worked with three clients so far, turning rough ideas into clear, confident visuals.</p>
+        <p>I work in Adobe Illustrator,Photoshop,InDesign, canva.</p>
+        <p>Alongside client work, I create digital products so you can get well-designed tools without waiting on a custom project.</p>
+      </div>
+    </section>
+
+  <!-- Visitors can start an enquiry or use the direct email link here. -->
+    <section id="contact" class="section contact">
+      <h2>Let's work together</h2>
+      <p>Have a project in mind? Send me a message and I'll reply within 24 hours.</p>
+      <div class="contact-actions">
+        <button class="btn btn-primary" data-open-contact>Send an enquiry</button>
+        <a class="btn" href="mailto:angellamarie006@gmail.com">angellamarie006@gmail.com</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- The footer is the small closing area at the bottom of the page. -->
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> Angella Creatives. Kampala, Uganda.</p>
+  </footer>
+
+  <!-- This dialog is a popup panel for contact details and the message form. -->
+  <dialog id="contact-dialog" class="lightbox contact-dialog" aria-labelledby="contact-heading">
+    <button class="lightbox-close" aria-label="Close contact form">Close</button>
+    <h2 id="contact-heading">Get in touch</h2>
+    <p>Ask about design work or products. I reply within two working days.</p>
+
+  <!-- These are direct ways to reach or follow the designer. -->
+    <ul class="contact-list">
+      <li>Email: <a href="mailto:angellamarie006@gmail.com">angellamarie006@gmail.com</a></li>
+      <li>Phone : <a href="tel:+256765315038">+256 765 315 038</a></li>
+      <li> WhatsApp: <a href="tel:+256757124084">+256 757 124 084</a></li>
+    </ul>
+
+    <!-- Replace YOUR_FORM_ID with the ID from your Formspree form (see setup steps) -->
+    <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <!-- Each label describes the field directly below it. -->
+      <label for="cf-name">Your name</label>
+      <input id="cf-name" name="name" type="text" autocomplete="name" required>
+
+      <label for="cf-email">Your email</label>
+      <input id="cf-email" name="email" type="email" autocomplete="email" required>
+
+      <label for="cf-topic">What is this about?</label>
+      <select id="cf-topic" name="topic">
+        <option>Design work</option>
+        <option>Digital products</option>
+        <option>Something else</option>
+      </select>
+
+      <label for="cf-message">Your message</label>
+      <textarea id="cf-message" name="message" rows="5" required></textarea>
+
+  <!-- This extra field is intended to help catch spam submissions. -->
+      <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <button type="submit" class="btn btn-primary">Send message</button>
+      <p id="form-status" role="status"></p>
+    </form>
+  </dialog>
+
+  <!-- This popup holds a larger preview of a selected project. -->
+  <dialog id="lightbox" class="lightbox" aria-label="Project preview">
+    <button class="lightbox-close" aria-label="Close preview">Close</button>
+    <div class="lightbox-media"></div>
+    <h3 class="lightbox-title"></h3>
+    <p class="lightbox-desc"></p>
+  </dialog>
+
+  <!-- Loads JavaScript that adds interactive behavior to the page. -->
+  <script src="script.js"></script>
+</body>
+</html>
